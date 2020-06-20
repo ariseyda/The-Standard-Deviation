@@ -21,7 +21,7 @@ int main(){
 	    for(i=0;;i++){
 	      scanf("%d",&p[i]);
 	      if(p[i]==0){
-			break;
+		  break;
 		}
 		  size++;
 	 }
@@ -29,18 +29,18 @@ int main(){
 		
 	p=realloc(p,size*sizeof(int));
 	
-		int max=p[0];
+	int max=p[0];
 	int min=p[0];
 	
 	for(k=1;k<size;k++){
-		if(p[k]<p[0]){
-			min=p[k];
-		}
+	   if(p[k]<p[0]){
+		min=p[k];
+	    }
 	}
 	for(l=1;l<size;l++){
-		if(p[l]>p[0]){
-			max=p[l];
-		}
+	    if(p[l]>p[0]){
+		max=p[l];
+	    }
 	}
 	
 	printf("MIN:%d\nMAX:%d\n",min,max);
@@ -48,7 +48,7 @@ int main(){
 	int sum=0;
 	
 	for(m=0;m<size;m++){
-		sum+=p[m];
+	    sum+=p[m];
 	}
 	
 	float avrg=sum/(size*1.0);
@@ -58,7 +58,7 @@ int main(){
 	int sum_squares=0;
 	
 	for(n=0;n<size;n++){
-		sum_squares+=p[n]*p[n];
+	   sum_squares+=p[n]*p[n];
 	}
 	
 	printf("\nSum squares:%d",sum_squares);
